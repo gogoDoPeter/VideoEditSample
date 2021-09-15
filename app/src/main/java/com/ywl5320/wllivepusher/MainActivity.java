@@ -31,22 +31,21 @@ public class MainActivity extends AppCompatActivity {
         checkPermission();
     }
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
-
     public void cameraPreview(View view) {
-
         Intent intent = new Intent(this, CameraActivity.class);
         startActivity(intent);
 
     }
 
-    public void vodeorecord(View view) {
+    public void videoRecord(View view) {
         Intent intent = new Intent(this, VideoActivity.class);
         startActivity(intent);
+    }
+
+    public void imgMakeVideo(View view) {
+    }
+
+    public void yuvPlayer(View view) {
     }
 
     private void checkPermission() {
@@ -86,4 +85,6 @@ public class MainActivity extends AppCompatActivity {
             checkPermission();
         }
     }
+
+
 }

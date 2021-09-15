@@ -13,6 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="视频编码录制"
-        android:onClick="vodeorecord"/>
+        android:onClick="videoRecord"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="图片生成视频"
+        android:onClick="imgMakeVideo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="播放YUV数据"
+        android:onClick="yuvPlayer"/>
 
 </LinearLayout>
